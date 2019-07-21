@@ -1,4 +1,8 @@
-# wtf-gulp-starter
+# Prosty notatnik w JS
+
+Stworzony podczas kursu WTF: Co Ten Frontend? Zapraszam na https://lukaszteterycz.github.io/simple-editor/
+
+# Jak uruchomić lokalnie?
 
 `npm install -g gulp-cli`
 
