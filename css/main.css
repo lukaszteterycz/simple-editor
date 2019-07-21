@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Darker+Grotesque:400,700&display=swap&subset=latin-ext");
 html {
   line-height: 1.15;
   /* 1 */
@@ -316,7 +317,66 @@ html {
           box-sizing: inherit; }
 
 body {
-  background-color: #546caf;
-  color: #fff; }
+  background-color: #121232;
+  color: #fff;
+  font-family: 'Darker Grotesque', sans-serif; }
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.header {
+  font-size: 35px; }
+  .header__text {
+    margin: 0; }
+
+.textarea {
+  font-size: 28px; }
+  .textarea__field {
+    width: 450px;
+    min-height: 350px;
+    margin-top: 10px; }
+    @media (max-width: 640px) {
+      .textarea__field {
+        width: 270px; } }
+
+.button {
+  width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+  @media (max-width: 640px) {
+    .button {
+      width: 270px;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+  .button__load {
+    background: #44BDD8;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    margin: 10px; }
+  .button__save {
+    background: #59D844;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    margin: 10px; }
 
 /*# sourceMappingURL=main.css.map */
