@@ -1,5 +1,6 @@
 @import "_normalize";
 @import "_variables";
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque:400,700&display=swap&subset=latin-ext');
 
 html {
   box-sizing: border-box;
@@ -12,6 +13,7 @@ html {
 body {
   background-color: $darkblue;
   color:#fff;
+  font-family: 'Darker Grotesque', sans-serif;
 }
 .wrapper {
   display: flex;
@@ -20,3 +22,48 @@ body {
   min-height: 100vh;
   flex-direction:column;
 }
+
+.header {
+  font-size:35px;
+  &__text{
+    margin:0;
+  }
+}
+
+.textarea {
+  font-size:28px;
+  &__field {
+    width:450px;
+    min-height: 350px;
+    margin-top:10px;
+    @media (max-width: $mobile){
+      width:270px;
+    }
+  }
+}
+
+.button {
+  width:450px;
+  display:flex;
+  justify-content: flex-end;
+  @media (max-width: $mobile){
+    width:270px;
+    justify-content: center;
+  }
+  &__load {
+    background:$lightblue;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    margin:10px;
+  }
+  &__save {
+    background:$lightgreen;
+    color: #fff;
+    padding: 10px 20px;
+    border:none;
+    margin:10px;
+  }
+}
+
+

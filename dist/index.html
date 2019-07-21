@@ -12,14 +12,18 @@
 <body>
 
   <main class="wrapper">
-    <p>
-      <label for="notatnik">Wpisz cokolwiek:</label><br>
-      <textarea id="notatnik" name="tekst"></textarea>
+    <header class="header">
+      <h1 class="header__text">Notatnik</h1>
+    </header>
+    <p class="textarea">
+      <label class="textarea__label" for="notatnik">Wpisz cokolwiek:</label><br>
+      <textarea class="textarea__field" id="notatnik" name="tekst"></textarea>
     </p>
-    <section>
-      <button>ZAŁADUJ</button>
-      <button>ZAPISZ</button>
+    <section class="button">
+      <button class="button__load">ZAŁADUJ</button>
+      <button class="button__save">ZAPISZ</button>
     </section>
+
   </main>
 
   <script src="js/main.js"></script>
